@@ -12,13 +12,15 @@
   set("eventState", c.region); set("ceremonyTitle", c.ceremonyTitle);
   set("ceremonyTime", c.ceremonyTime); set("ceremonyLocation", c.ceremonyLocation);
   const params = new URLSearchParams(window.location.search);
-  const inviteeName = params.get("to");
+const inviteeName = params.get("to");
 
-  const invitationGreeting = inviteeName
-    ? `${inviteeName}, You Are Specially Invited`
-    : "You Are Specially Invited";
-  set("rsvpDear", invitationGreeting);
-  set("personalInvite", invitationGreeting);
+if (inviteeName) {
+    set("personalInvite", `${inviteeName}, You Are Specially Invited`);
+} else {
+    set("personalInvite", "You Are Specially Invited");
+}
+
+set("rsvpDear", inviteeName ? `Dear ${inviteeName},` : "Dear family and friends,");
   
   const date = new Date(c.eventDate || "2026-12-12T11:00:00+05:30");
   const validDate = !Number.isNaN(date.getTime());
