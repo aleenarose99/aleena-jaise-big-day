@@ -1,26 +1,25 @@
 window.WEDDING_CONFIG = {
-
+  bride: "Aleena Rose",
   groom: "Jaise Jose",
 
-  bride: "Aleena Rose",
+  tagline: "A Celebration of Love",
 
-  tagline: "Together Forever",
-
-  invitationMessage: "With the love and blessings of our families, we warmly invite you to join us in celebrating the beginning of our forever.",
+  invitationMessage:
+    "With the love and blessings of our families, we warmly invite you to join us in celebrating the beginning of our forever.",
 
   eventDate: "2026-11-28T11:00:00+05:30",
-
   eventTime: "11:00 AM ONWARDS",
 
   venueName: "St. Sebastian's Church",
   venueAddress: "St. Sebastian's Church, Poroor, Kattimoola",
   region: "KATTIMOOLA, KERALA, INDIA",
 
-  mapUrl: "https://maps.app.goo.gl/rxr836VARghJ3yxU6",
-
-  ceremonyTitle: "Wedding Ceremony",
+  ceremonyTitle: "Engagement Ceremony",
   ceremonyTime: "Saturday | 11:00 AM",
   ceremonyLocation: "St. Sebastian's Church, Poroor, Kattimoola",
+
+  // Keep your existing mapUrl, images and whatsappNumber here.
+};
 
   images: {
     hero: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=85",
