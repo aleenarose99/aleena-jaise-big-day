@@ -20,7 +20,8 @@ window.WEDDING_CONFIG = {
   ceremonyLocation: "St. Sebastian's Church, Poroor, Kattimoola",
 
   images: {
-    hero: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=85",
+    hero: "https://github.com/aleenarose99/aleena-jaise-big-day/blob/master/assets/Rose%26Jaise.jpg",
+      // "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=85",
     invitation: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1400&q=85",
     event: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1800&q=85",
     celebration: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1600&q=85",
