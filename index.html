@@ -116,6 +116,12 @@
         <p class="eyebrow">KINDLY RESPOND</p>
         <h2>RSVP</h2>
         <p class="rsvp-dear" id="rsvpDear">Dear family and friends,</p>
+        set(
+          "personalInvite",
+          inviteeName
+          ? `${inviteeName}, You Are Specially Invited`
+          : "You Are Specially Invited"
+        );
         <p class="body-copy">Please let us know if you can join us in celebrating our special day.</p>
         <form id="rsvpForm">
           <label for="guestName">YOUR NAME</label>
