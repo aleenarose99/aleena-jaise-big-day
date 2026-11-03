@@ -13,12 +13,13 @@
   set("ceremonyTime", c.ceremonyTime); set("ceremonyLocation", c.ceremonyLocation);
   const params = new URLSearchParams(window.location.search);
   const inviteeName = params.get("to");
-   set(
-     "rsvpDear",
-      inviteeName
-      ? `${inviteeName}, You Are Specially Invited`
-      : "You Are Specially Invited"
-   );
+
+  const invitationGreeting = inviteeName
+    ? `${inviteeName}, You Are Specially Invited`
+    : "You Are Specially Invited";
+  set("rsvpDear", invitationGreeting);
+  set("personalInvite", invitationGreeting);
+  
   const date = new Date(c.eventDate || "2026-12-12T11:00:00+05:30");
   const validDate = !Number.isNaN(date.getTime());
   if (validDate) {
