@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171715">
+  <title>A Celebration of Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="floating-nav">
+    <a class="nav-couple" href="#home"><span id="navGroom">Groom</span><i>&</i><span id="navBride">Bride</span></a>
+    <button class="schedule-btn" id="scheduleBtn">Schedule <span>↗</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image image-overlay" id="heroImage"></div>
+      <div class="hero-content">
+        <p class="eyebrow reveal">TOGETHER WITH THEIR FAMILIES</p>
+        <h1 class="names reveal"><span id="groomName">Groom Name</span><em>&</em><span id="brideName">Bride Name</span></h1>
+        <p class="script-name reveal" id="coupleTagline">A new chapter begins</p>
+        <p class="invite-line reveal">You are specially invited</p>
+        <a class="scroll-cue" href="#invitation" aria-label="Scroll to invitation"><span></span> SCROLL TO EXPLORE</a>
+      </div>
+      <div class="hero-bottom-mark">EST. IN LOVE <b>✦</b> FOREVER</div>
+    </section>
+
+    <section class="invitation section" id="invitation">
+      <div class="section-photo invitation-photo image-overlay" id="inviteImage"></div>
+      <div class="invitation-copy reveal">
+        <p class="eyebrow">A MOMENT TO CHERISH</p>
+        <h2>Two souls.<br><i>One beautiful</i> journey.</h2>
+        <p class="body-copy" id="inviteMessage">With the love and blessings of our families, we invite you to join us as we begin our forever together.</p>
+        <div class="small-rule"></div>
+        <p class="signature" id="signatureNames">Groom & Bride</p>
+        <p class="muted">request the pleasure of your company</p>
+      </div>
+    </section>
+
+    <section class="event section" id="event">
+      <div class="event-photo image-overlay" id="eventImage"></div>
+      <div class="event-content reveal">
+        <p class="eyebrow">JOIN US ON</p>
+        <div class="date-lockup">
+          <div><span id="weekday">SATURDAY</span><span id="monthYear">DECEMBER 2026</span></div>
+          <strong id="dayNumber">12</strong>
+          <div><span id="eventYear">2026</span><span id="eventState">KERALA, INDIA</span></div>
+        </div>
+        <p class="event-time" id="eventTime">11:00 AM ONWARDS</p>
+        <div class="venue-rule"></div>
+        <p class="eyebrow">VENUE</p>
+        <h3 id="venueName">The Celebration Venue</h3>
+        <p class="venue-address" id="venueAddress">Your venue address, city, state</p>
+        <a class="text-link" id="directionsLink" href="#" target="_blank" rel="noopener">GET DIRECTIONS <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="celebrations section" id="schedule">
+      <div class="celebrations-heading reveal">
+        <p class="eyebrow">THE DAY WE BECOME ONE</p>
+        <h2>Celebrations</h2>
+        <p>Join us in our joy</p>
+      </div>
+      <div class="celebration-card image-overlay reveal" id="celebrationImage">
+        <div class="card-content">
+          <span class="diamond">◇</span>
+          <p class="eyebrow">THE CEREMONY</p>
+          <h3 id="ceremonyTitle">Wedding Ceremony</h3>
+          <p class="card-date" id="ceremonyDate">SATURDAY | 12 DECEMBER 2026</p>
+          <p class="card-time" id="ceremonyTime">Time: 11:00 AM</p>
+          <p class="card-location" id="ceremonyLocation">At the celebration venue</p>
+          <a class="text-link" id="ceremonyMap" href="#" target="_blank" rel="noopener">VIEW MAP <span>↗</span></a>
+        </div>
+      </div>
+      <div class="celebration-note reveal">A day filled with love, laughter<br>and memories to last a lifetime.</div>
+    </section>
+
+    <section class="countdown-section section">
+      <div class="countdown-bg image-overlay" id="countdownImage"></div>
+      <div class="countdown-content reveal">
+        <p class="eyebrow">THE WAIT IS ALMOST OVER</p>
+        <h2>Counting down to the big day</h2>
+        <div class="countdown" aria-live="polite">
+          <div><strong id="days">00</strong><span>DAYS</span></div>
+          <div><strong id="hours">00</strong><span>HOURS</span></div>
+          <div><strong id="minutes">00</strong><span>MINUTES</span></div>
+          <div><strong id="seconds">00</strong><span>SECONDS</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rsvp section" id="rsvp">
+      <div class="rsvp-photo image-overlay" id="rsvpImage"></div>
+      <div class="rsvp-content reveal">
+        <p class="eyebrow">KINDLY RESPOND</p>
+        <h2>RSVP</h2>
+        <p class="rsvp-dear" id="rsvpDear">Dear family and friends,</p>
+        <p class="body-copy">Please let us know if you can join us in celebrating our special day.</p>
+        <form id="rsvpForm">
+          <label for="guestName">YOUR NAME</label>
+          <input id="guestName" name="guestName" placeholder="Enter your name" required>
+          <label>WILL YOU BE ATTENDING?</label>
+          <div class="attendance">
+            <label class="choice"><input type="radio" name="attendance" value="Yes, I'll be there" required><span>Yes, I'll be there</span></label>
+            <label class="choice"><input type="radio" name="attendance" value="Sorry, can't make it"><span>Sorry, can't make it</span></label>
+          </div>
+          <label for="guestCount">NUMBER OF GUESTS</label>
+          <select id="guestCount" name="guestCount"><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select>
+          <button class="confirm-btn" type="submit">CONFIRM RSVP <span>↗</span></button>
+          <p class="form-note" id="formNote">Please select your response to continue.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-names"><span id="footerGroom">Groom</span> <i>&</i> <span id="footerBride">Bride</span></p>
+    <p>MADE WITH LOVE <b>✦</b> FOREVER BEGINS HERE</p>
+    <a href="#home">BACK TO TOP ↑</a>
+  </footer>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
