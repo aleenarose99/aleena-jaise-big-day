@@ -448,8 +448,29 @@ footer b {
     animation: celebrationCardReveal 1.1s ease both;
 }
 
+.celebration-card {
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+}
+
 .celebration-card.visible {
-    background-size: 110% 110%;
+
+    background-size: cover;
+
+}
+.celebration-card {
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
 }
 
 /* Individual Celebration Card Animations */
