@@ -1,27 +1,316 @@
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:#191917;color:#eee8dc;font-family:"DM Sans",sans-serif;font-weight:300}a{color:inherit;text-decoration:none}.grain{position:fixed;inset:0;pointer-events:none;z-index:20;opacity:.055;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.45'/%3E%3C/svg%3E")}.floating-nav{position:fixed;z-index:30;top:17px;left:50%;transform:translateX(-50%);width:min(520px,calc(100% - 32px));height:47px;border-radius:40px;background:rgba(239,235,225,.94);color:#332d27;display:flex;align-items:center;justify-content:space-between;padding:0 23px;box-shadow:0 8px 30px #0003;backdrop-filter:blur(12px);transition:top .35s}.nav-couple{font-family:"Cormorant Garamond",serif;font-size:20px;font-weight:600}.nav-couple i,.footer-names i{color:#a68a55;font-style:normal;padding:0 5px}.schedule-btn{border:0;background:none;color:#514638;font:500 9px "DM Sans";letter-spacing:2px;text-transform:uppercase;cursor:pointer}.schedule-btn span{font-size:14px;margin-left:7px}.hero{min-height:100svh;position:relative;display:grid;place-items:center;text-align:center;overflow:hidden}.hero-image,.image-overlay{position:absolute;inset:0;background-position:center;background-size:cover;filter:grayscale(1)}.hero-image:after,.image-overlay:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.45),rgba(10,10,10,.58) 55%,#191917 100%)}.hero-content{position:relative;z-index:1;padding:100px 20px 80px;animation:fadeUp 1.2s both}.eyebrow{font-size:9px;letter-spacing:3px;color:#c1ad86;font-weight:400}.names{font:400 clamp(64px,11vw,132px)/.82 "Cormorant Garamond",serif;margin:36px 0 25px;display:flex;flex-direction:column;gap:10px}.names em{font-size:.43em;color:#c2a36c;line-height:1.1}.script-name{font:italic 29px "Cormorant Garamond",serif;color:#c5aa78;margin:34px 0 8px}.invite-line{font-size:11px;color:#d3c9b8}.scroll-cue{position:absolute;left:50%;bottom:35px;transform:translateX(-50%);font-size:8px;letter-spacing:2.5px;white-space:nowrap;color:#d2c8b7}.scroll-cue span{display:block;height:30px;width:1px;background:#b69b6a;margin:0 auto 12px;animation:linePulse 1.8s infinite}.hero-bottom-mark{position:absolute;bottom:18px;left:0;right:0;font-size:7px;letter-spacing:3px;color:#b8ad9a}.hero-bottom-mark b,footer b{color:#b69b6a;padding:0 7px}.section{position:relative;overflow:hidden}.invitation{min-height:740px;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:120px max(8vw,30px);gap:9vw;background:#1d1d1a}.section-photo{position:absolute;left:0;top:0;width:42%;height:100%;opacity:.55}.section-photo:after{background:linear-gradient(90deg,rgba(15,15,14,.15),#1d1d1a 95%)}.invitation-copy{grid-column:2;position:relative;max-width:430px}.invitation-copy h2,.celebrations h2,.countdown-content h2,.rsvp h2{font:400 clamp(45px,6vw,75px)/.95 "Cormorant Garamond",serif;margin:25px 0}.invitation-copy h2 i{color:#c0a16d}.body-copy{font-size:13px;line-height:2;color:#c5beb1;max-width:360px}.small-rule,.venue-rule{width:42px;height:1px;background:#a68a55;margin:30px 0}.signature{font:italic 27px "Cormorant Garamond",serif;color:#c8ad7c;margin:0}.muted{font-size:9px;letter-spacing:1px;color:#8e887e}.event{min-height:780px;display:grid;place-items:center;text-align:center}.event-photo{position:absolute;inset:0}.event-photo:after{background:linear-gradient(90deg,#141412a8,#14141280),linear-gradient(0deg,#191917 0%,transparent 28%,transparent 75%,#191917 100%)}.event-content{position:relative;z-index:1;padding:110px 20px;max-width:620px}.date-lockup{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;margin:35px 0 15px}.date-lockup>div{display:flex;flex-direction:column;gap:9px;font-size:9px;letter-spacing:2px;color:#c7bba6}.date-lockup strong{font:400 clamp(80px,13vw,140px)/.8 "Cormorant Garamond",serif}.event-time{font-size:10px;letter-spacing:2px;color:#c7ad7b}.venue-rule{margin:35px auto}.event-content h3{font:400 30px "Cormorant Garamond",serif;margin:15px 0 8px}.venue-address{font-size:11px;line-height:1.8;color:#c4bcae}.text-link{display:inline-block;margin-top:20px;font-size:8px;letter-spacing:2.5px;color:#c4a875;border-bottom:1px solid #806d4d;padding-bottom:8px}.text-link span{margin-left:10px}.celebrations{padding:115px 20px 125px;background:#1b1b19;text-align:center}.celebrations-heading h2{margin:20px 0 8px}.celebrations-heading>p:last-child{font:italic 18px "Cormorant Garamond";color:#b8a88c}.celebration-card{position:relative;max-width:780px;min-height:460px;margin:55px auto 0;text-align:left;background-position:center;background-size:cover}.celebration-card:after{background:linear-gradient(90deg,#141412d9,#14141280 70%,#14141240)}.card-content{position:relative;z-index:1;padding:65px 9%;max-width:470px}.diamond{font-size:28px;color:#c3a36d}.card-content h3{font:400 47px/.95 "Cormorant Garamond";margin:14px 0 20px}.card-date,.card-time,.card-location{font-size:10px;line-height:1.9;color:#c9c0b2}.card-date{letter-spacing:1.5px}.celebration-note{font:italic 19px/1.6 "Cormorant Garamond";color:#b8a98d;margin-top:45px}.countdown-section{min-height:600px;display:grid;place-items:center;text-align:center}.countdown-bg{position:absolute;inset:0}.countdown-bg:after{background:#10100fc4}.countdown-content{position:relative;z-index:1;padding:100px 20px;width:100%}.countdown-content h2{font-size:clamp(32px,5vw,55px);margin:20px 0 55px;text-transform:none}.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;max-width:760px;margin:auto}.countdown div{display:flex;flex-direction:column;gap:12px}.countdown strong{font:400 clamp(45px,8vw,85px)/1 "Cormorant Garamond";font-variant-numeric:tabular-nums}.countdown span{font-size:8px;letter-spacing:2px;color:#c2a878}.rsvp{min-height:750px;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:100px max(8vw,28px);gap:8vw;background:#1c1c19}.rsvp-photo{position:absolute;right:0;top:0;width:45%;height:100%;opacity:.5}.rsvp-photo:after{background:linear-gradient(270deg,rgba(10,10,10,.2),#1c1c19 100%)}.rsvp-content{position:relative;z-index:1;max-width:430px}.rsvp h2{font-size:75px;margin:15px 0}.rsvp-dear{font:italic 20px "Cormorant Garamond";color:#c6a978}form{margin-top:35px;display:flex;flex-direction:column;gap:12px}form>label{font-size:8px;letter-spacing:2px;color:#b9a77f;margin-top:8px}input,select{width:100%;background:#292925;border:1px solid #555044;color:#eee8dc;padding:13px 14px;font:12px "DM Sans";outline:none;border-radius:2px}input:focus,select:focus{border-color:#b59a67}.attendance{display:grid;grid-template-columns:1fr 1fr;gap:10px}.choice{cursor:pointer}.choice input{position:absolute;opacity:0;width:1px}.choice span{display:block;text-align:center;border:1px solid #5a554a;padding:14px 7px;font-size:10px;color:#c9c1b5;transition:.25s}.choice input:checked+span{background:#e8e0d1;color:#29251f;border-color:#e8e0d1}.confirm-btn{margin-top:10px;background:#e8e0d1;color:#29251f;border:0;padding:16px;letter-spacing:2px;font:500 9px "DM Sans";cursor:pointer;transition:.25s}.confirm-btn:hover{background:#c5a878}.confirm-btn span{margin-left:12px}.form-note{font-size:9px;color:#a89e8d;line-height:1.6}footer{text-align:center;padding:65px 20px 45px;background:#141412}footer .footer-names{font:400 32px "Cormorant Garamond";margin:0 0 13px}footer>p:nth-child(2){font-size:7px;letter-spacing:2.5px;color:#918879}footer>a{display:inline-block;margin-top:24px;font-size:8px;letter-spacing:2px;color:#c2a878}.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}.reveal.visible{opacity:1;transform:translateY(0)}@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}@keyframes linePulse{0%,100%{transform:scaleY(.65);transform-origin:top;opacity:.5}50%{transform:scaleY(1);opacity:1}}@media(max-width:700px){.floating-nav{top:12px;height:43px;padding:0 18px}.nav-couple{font-size:18px}.hero{min-height:100svh}.names{font-size:clamp(62px,17vw,94px);margin-top:30px}.invitation{min-height:720px;display:flex;align-items:flex-end;padding:0 27px 95px}.section-photo{width:100%;height:62%;opacity:.65}.section-photo:after{background:linear-gradient(180deg,rgba(15,15,14,.1),#1d1d1a 95%)}.invitation-copy{max-width:100%}.invitation-copy h2{font-size:56px}.event{min-height:730px}.event-content{padding:100px 22px}.date-lockup{gap:10px}.date-lockup>div{font-size:7px;letter-spacing:1px}.date-lockup strong{font-size:100px}.celebrations{padding:90px 18px}.celebration-card{min-height:430px;margin-top:40px}.card-content{padding:55px 8%}.card-content h3{font-size:42px}.countdown-section{min-height:500px}.countdown{gap:8px}.countdown strong{font-size:48px}.countdown span{font-size:7px;letter-spacing:1px}.rsvp{min-height:780px;display:flex;align-items:flex-end;padding:0 25px 85px}.rsvp-photo{width:100%;height:60%;opacity:.45}.rsvp-photo:after{background:linear-gradient(180deg,rgba(10,10,10,.1),#1c1c19 95%)}.rsvp-content{width:100%}.rsvp h2{font-size:68px}.attendance{gap:7px}.choice span{font-size:9px;padding:13px 4px}}@media(prefers-reduced-motion:reduce) {
-    *,
-    *:before,
-    *:after {
-        scroll-behavior: auto !important;
-        animation: none !important;
-        transition: none !important;
-    }
-}
+(() => {
+    const c = window.WEDDING_CONFIG || {};
 
-/* Personalized guest name */
-.invitee-name {
-    display: block;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 36px;
-    font-weight: 600;
-    color: #c5aa78;
-    line-height: 1.2;
-    margin-bottom: 8px;
-}
+    const $ = id => document.getElementById(id);
 
-/* Mobile adjustment */
-@media (max-width: 700px) {
-    .invitee-name {
-        font-size: 32px;
+    const set = (id, value) => {
+        if ($(id) && value !== undefined) {
+            $(id).textContent = value;
+        }
+    };
+
+    const fullNames = "Aleena & Jaise";
+
+    // Couple names
+    set("groomName", c.groom);
+    set("brideName", c.bride);
+
+    // Short names in navigation
+    set("navBride", "Aleena");
+    set("navGroom", "Jaise");
+
+    set("footerGroom", c.groom);
+    set("footerBride", c.bride);
+
+    set("signatureNames", fullNames);
+    set("coupleTagline", c.tagline);
+
+    // Invitation and event details
+    set("inviteMessage", c.invitationMessage);
+    set("eventTime", c.eventTime);
+    set("venueName", c.venueName);
+    set("venueAddress", c.venueAddress);
+    set("eventState", c.region);
+
+    set("ceremonyTitle", c.ceremonyTitle);
+    set("ceremonyTime", c.ceremonyTime);
+    set("ceremonyLocation", c.ceremonyLocation);
+
+    // =================================
+    // PERSONALIZED INVITATION
+    // =================================
+
+    const params = new URLSearchParams(window.location.search);
+    const inviteeName = params.get("to");
+
+    const personalInvite = $("personalInvite");
+
+    if (personalInvite) {
+        if (inviteeName) {
+            const nameSpan = document.createElement("span");
+
+            nameSpan.className = "invitee-name";
+            nameSpan.textContent = inviteeName;
+
+            const tagline = $("coupleTagline");
+
+            if (tagline) {
+                nameSpan.style.color = getComputedStyle(tagline).color;
+            }
+
+            personalInvite.replaceChildren(
+                nameSpan,
+                document.createElement("br"),
+                document.createTextNode("You Are Specially Invited")
+            );
+
+        } else {
+            personalInvite.textContent = "You Are Specially Invited";
+        }
     }
-}
+
+    set(
+        "rsvpDear",
+        inviteeName ? `Dear ${inviteeName},` : "Dear family and friends,"
+    );
+
+    // =================================
+    // NAVIGATION SCROLL EFFECT
+    // =================================
+
+    const floatingNav = document.querySelector(".floating-nav");
+
+    function updateNavigation() {
+        if (!floatingNav) return;
+
+        floatingNav.classList.toggle(
+            "scrolled",
+            window.scrollY > 100
+        );
+    }
+
+    window.addEventListener("scroll", updateNavigation, {
+        passive: true
+    });
+
+    updateNavigation();
+
+    // =================================
+    // EVENT DATE
+    // =================================
+
+    const date = new Date(
+        c.eventDate || "2026-11-28T11:00:00+05:30"
+    );
+
+    const validDate = !Number.isNaN(date.getTime());
+
+    if (validDate) {
+        set(
+            "weekday",
+            date.toLocaleDateString("en-US", {
+                weekday: "long"
+            }).toUpperCase()
+        );
+
+        set(
+            "monthYear",
+            date.toLocaleDateString("en-US", {
+                month: "long",
+                year: "numeric"
+            }).toUpperCase()
+        );
+
+        set(
+            "dayNumber",
+            String(date.getDate()).padStart(2, "0")
+        );
+
+        set("eventYear", date.getFullYear());
+
+        const dateLine =
+            `${date.toLocaleDateString("en-US", {
+                weekday: "long"
+            }).toUpperCase()} | ${date.getDate()} ${date.toLocaleDateString(
+                "en-US",
+                {
+                    month: "long"
+                }
+            ).toUpperCase()} ${date.getFullYear()}`;
+
+        set("ceremonyDate", dateLine);
+    }
+
+    // =================================
+    // BACKGROUND IMAGES
+    // =================================
+
+    const images = c.images || {};
+
+    [
+        ["heroImage", "hero"],
+        ["inviteImage", "invitation"],
+        ["eventImage", "event"],
+        ["celebrationImage", "celebration"],
+        ["countdownImage", "countdown"],
+        ["rsvpImage", "rsvp"]
+    ].forEach(([id, key]) => {
+        if (images[key] && $(id)) {
+            $(id).style.backgroundImage =
+                `url("${images[key]}")`;
+        }
+    });
+
+    // =================================
+    // GOOGLE MAP LINKS
+    // =================================
+
+    ["directionsLink", "ceremonyMap"].forEach(id => {
+        if ($(id)) {
+            $(id).href = c.mapUrl || "#";
+        }
+    });
+
+    // =================================
+    // SCHEDULE BUTTON
+    // =================================
+
+    const scheduleBtn = $("scheduleBtn");
+    const scheduleSection = $("schedule");
+
+    if (scheduleBtn && scheduleSection) {
+        scheduleBtn.addEventListener("click", () => {
+            scheduleSection.scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+    }
+
+    // =================================
+    // SCROLL REVEAL ANIMATIONS
+    // =================================
+
+    const revealEls = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window) {
+
+        const observer = new IntersectionObserver(
+            entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: .12
+            }
+        );
+
+        revealEls.forEach(el => observer.observe(el));
+
+    } else {
+        revealEls.forEach(el => {
+            el.classList.add("visible");
+        });
+    }
+
+    // =================================
+    // COUNTDOWN
+    // =================================
+
+    function updateCountdown() {
+        if (!validDate) return;
+
+        const diff = Math.max(
+            0,
+            date.getTime() - Date.now()
+        );
+
+        const days = Math.floor(diff / 86400000);
+
+        const hours = Math.floor(diff / 3600000) % 24;
+
+        const minutes = Math.floor(diff / 60000) % 60;
+
+        const seconds = Math.floor(diff / 1000) % 60;
+
+        set("days", String(days).padStart(2, "0"));
+
+        set("hours", String(hours).padStart(2, "0"));
+
+        set("minutes", String(minutes).padStart(2, "0"));
+
+        set("seconds", String(seconds).padStart(2, "0"));
+    }
+
+    updateCountdown();
+
+    setInterval(updateCountdown, 1000);
+
+    // =================================
+    // RSVP FORM - WHATSAPP
+    // =================================
+
+    const rsvpForm = $("rsvpForm");
+
+    if (rsvpForm) {
+        rsvpForm.addEventListener("submit", e => {
+
+            e.preventDefault();
+
+            const name = $("guestName").value.trim();
+
+            const attendance = document.querySelector(
+                'input[name="attendance"]:checked'
+            );
+
+            const formNote = $("formNote");
+
+            if (!name || !attendance) {
+                if (formNote) {
+                    formNote.textContent =
+                        "Please enter your name and select an attendance option.";
+                }
+
+                return;
+            }
+
+            const guests = $("guestCount").value;
+
+            const number = (c.whatsappNumber || "")
+                .replace(/\D/g, "");
+
+            if (!number || number.length < 10) {
+                if (formNote) {
+                    formNote.textContent =
+                        "Please add a valid WhatsApp number in config.js.";
+                }
+
+                return;
+            }
+
+            const message = `Engagement RSVP - ${fullNames}
+Name: ${name}
+Attendance: ${attendance.value}
+Number of guests: ${guests}`;
+
+            const whatsappURL =
+                `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
+
+            window.open(
+                whatsappURL,
+                "_blank",
+                "noopener"
+            );
+
+            if (formNote) {
+                formNote.textContent =
+                    "Your WhatsApp message is ready. Please send it to confirm your RSVP.";
+            }
+        });
+    }
+
+})();
