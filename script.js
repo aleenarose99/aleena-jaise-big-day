@@ -2,7 +2,7 @@
   const c = window.WEDDING_CONFIG || {};
   const $ = id => document.getElementById(id);
   const set = (id, value) => { if ($(id) && value !== undefined) $(id).textContent = value; };
-  const fullNames = `${c.groom || "Groom"} & ${c.bride || "Bride"}`;
+  const fullNames = `${c.bride || "Bride"} & ${c.groom || "Groom"}`;
   set("groomName", c.groom); set("brideName", c.bride);
   set("navGroom", c.groom); set("navBride", c.bride);
   set("footerGroom", c.groom); set("footerBride", c.bride);
@@ -11,7 +11,14 @@
   set("venueName", c.venueName); set("venueAddress", c.venueAddress);
   set("eventState", c.region); set("ceremonyTitle", c.ceremonyTitle);
   set("ceremonyTime", c.ceremonyTime); set("ceremonyLocation", c.ceremonyLocation);
-  set("rsvpDear", `Dear family and friends,`);
+  const params = new URLSearchParams(window.location.search);
+  const inviteeName = params.get("to");
+   set(
+     "rsvpDear",
+      inviteeName
+      ? `${inviteeName}, You Are Specially Invited`
+      : "You Are Specially Invited"
+   );
   const date = new Date(c.eventDate || "2026-12-12T11:00:00+05:30");
   const validDate = !Number.isNaN(date.getTime());
   if (validDate) {
