@@ -26,7 +26,8 @@ window.WEDDING_CONFIG = {
       // "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1400&q=85",
     event: "assets/Rose3.jpg",
       // "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1800&q=85",
-    celebration: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1600&q=85",
+    celebration: "assets/Rose6.jpg",
+      // "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1600&q=85",
     countdown: "assets/Rose4.jpg",
       // "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=85",
     rsvp: "assets/Rose5.jpg"
