@@ -65,11 +65,23 @@
     const name = $("guestName").value.trim();
     const attendance = document.querySelector('input[name="attendance"]:checked');
     if (!name || !attendance) { $("formNote").textContent = "Please enter your name and select an attendance option."; return; }
-    const guests = $("guestCount").value;
-    const message = `Engagement RSVP - ${fullNames}%0AName: ${encodeURIComponent(name)}%0AAttendance: ${encodeURIComponent(attendance.value)}%0ANumber of guests: ${encodeURIComponent(guests)}`;
-    const number = (c.whatsappNumber || "").replace(/\D/g,"");
-    if (!number || number.length < 10) { $("formNote").textContent = "RSVP details are ready. Add a valid WhatsApp number in config.js to enable sending."; return; }
-    window.open(`https://wa.me/${number}?text=${message}`,"_blank","noopener");
-    $("formNote").textContent = "Your WhatsApp message is ready. Please send it to confirm your RSVP.";
+   const guests = $("guestCount").value;
+const number = (c.whatsappNumber || "").replace(/\D/g, "");
+
+if (!number || number.length < 10) {
+  $("formNote").textContent = "Please add a valid WhatsApp number in config.js.";
+  return;
+}
+
+const message = `Engagement RSVP - ${fullNames}
+Name: ${name}
+Attendance: ${attendance.value}
+Number of guests: ${guests}`;
+
+const whatsappURL = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
+
+window.open(whatsappURL, "_blank", "noopener");
+
+$("formNote").textContent = "Your WhatsApp message is ready. Please send it to confirm your RSVP.";
   });
 })();
