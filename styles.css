@@ -976,3 +976,13 @@ footer > a {
         background-size: cover !important;
     }
 }
+/* Fix celebration image on mobile */
+@media (max-width: 700px) {
+    .celebration-card,
+    .celebration-card.visible {
+        background-size: contain !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        background-color: #141412;
+    }
+}
