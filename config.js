@@ -45,5 +45,5 @@ rsvp: "assets/images/jaise-aleena-rsvp.jpg"
 // Include country code, digits only.
 // Example: 919876543210
 
-whatsappNumber: “+91 8590319866”
+whatsappNumber: “918590319866”
 };
