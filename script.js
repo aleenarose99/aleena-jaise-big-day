@@ -2,7 +2,7 @@
   const c = window.WEDDING_CONFIG || {};
   const $ = id => document.getElementById(id);
   const set = (id, value) => { if ($(id) && value !== undefined) $(id).textContent = value; };
-  const fullNames = `${c.bride || "Bride"} & ${c.groom || "Groom"}`;
+  const fullNames = "Aleena & Jaise";
   set("groomName", c.groom); set("brideName", c.bride);
   set("navGroom", c.groom); set("navBride", c.bride);
   set("footerGroom", c.groom); set("footerBride", c.bride);
@@ -66,7 +66,7 @@
     const attendance = document.querySelector('input[name="attendance"]:checked');
     if (!name || !attendance) { $("formNote").textContent = "Please enter your name and select an attendance option."; return; }
     const guests = $("guestCount").value;
-    const message = `RSVP for ${fullNames}%0AName: ${encodeURIComponent(name)}%0AAttendance: ${encodeURIComponent(attendance.value)}%0ANumber of guests: ${encodeURIComponent(guests)}`;
+    const message = `Engagement RSVP - ${fullNames}%0AName: ${encodeURIComponent(name)}%0AAttendance: ${encodeURIComponent(attendance.value)}%0ANumber of guests: ${encodeURIComponent(guests)}`;
     const number = (c.whatsappNumber || "").replace(/\D/g,"");
     if (!number || number.length < 10) { $("formNote").textContent = "RSVP details are ready. Add a valid WhatsApp number in config.js to enable sending."; return; }
     window.open(`https://wa.me/${number}?text=${message}`,"_blank","noopener");
