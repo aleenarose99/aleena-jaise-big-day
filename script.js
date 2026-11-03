@@ -28,37 +28,32 @@
   set("ceremonyLocation", c.ceremonyLocation);
 
   // Personalized invitation
-  const params = new URLSearchParams(window.location.search);
-  const inviteeName = params.get("to");
+ // Personalized invitation
+const params = new URLSearchParams(window.location.search);
+const inviteeName = params.get("to");
 
-  const personalInvite = $("personalInvite");
+const personalInvite = $("personalInvite");
 
-  if (personalInvite) {
+if (personalInvite) {
     if (inviteeName) {
-      const nameSpan = document.createElement("span");
-      nameSpan.className = "invitee-name";
-      nameSpan.textContent = inviteeName;
+        const nameSpan = document.createElement("span");
+        nameSpan.className = "invitee-name";
+        nameSpan.textContent = inviteeName;
 
-      // Match the color of "A Celebration of Love"
-      const tagline = $("coupleTagline");
-
-      if (tagline) {
-        nameSpan.style.color = getComputedStyle(tagline).color;
-      }
-
-      personalInvite.replaceChildren(
-        nameSpan,
-        document.createTextNode(", You Are Specially Invited")
-      );
+        personalInvite.replaceChildren(
+            nameSpan,
+            document.createElement("br"),
+            document.createTextNode("You Are Specially Invited")
+        );
     } else {
-      personalInvite.textContent = "You Are Specially Invited";
+        personalInvite.textContent = "You Are Specially Invited";
     }
-  }
+}
 
-  set(
+set(
     "rsvpDear",
     inviteeName ? `Dear ${inviteeName},` : "Dear family and friends,"
-  );
+);
 
   // Event date
   const date = new Date(
