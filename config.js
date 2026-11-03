@@ -1,5 +1,7 @@
-const WEDDING_CONFIG = {
+window.WEDDING_CONFIG = {
+
   groom: "Jaise Jose",
+
   bride: "Aleena Rose",
 
   tagline: "Together Forever",
@@ -7,6 +9,7 @@ const WEDDING_CONFIG = {
   invitationMessage: "With the love and blessings of our families, we warmly invite you to join us in celebrating the beginning of our forever.",
 
   eventDate: "2026-11-28T11:00:00+05:30",
+
   eventTime: "11:00 AM ONWARDS",
 
   venueName: "St. Sebastian's Church",
