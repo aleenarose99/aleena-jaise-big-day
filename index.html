@@ -13,7 +13,9 @@
 <body>
   <div class="grain" aria-hidden="true"></div>
   <header class="floating-nav">
-    <a class="nav-couple" href="#home"><span id="navGroom">Groom</span><i>&</i><span id="navBride">Bride</span></a>
+    <a class="nav-couple" href="#home">
+      <span id="navBride">Bride</span><i>&</i><span id="navGroom">Groom</span>
+    </a>
     <button class="schedule-btn" id="scheduleBtn">Schedule <span>↗</span></button>
   </header>
 
@@ -116,12 +118,6 @@
         <p class="eyebrow">KINDLY RESPOND</p>
         <h2>RSVP</h2>
         <p class="rsvp-dear" id="rsvpDear">Dear family and friends,</p>
-        set(
-          "personalInvite",
-          inviteeName
-          ? `${inviteeName}, You Are Specially Invited`
-          : "You Are Specially Invited"
-        );
         <p class="body-copy">Please let us know if you can join us in celebrating our special day.</p>
         <form id="rsvpForm">
           <label for="guestName">YOUR NAME</label>
