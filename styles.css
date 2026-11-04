@@ -25,3 +25,149 @@
         font-size: 32px;
     }
 }
+/* ========================================
+   ELEGANT PERSONALIZED HERO INVITATION
+======================================== */
+
+.invitation-hero {
+    min-height: 100svh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Background image */
+.invitation-hero .hero-image {
+    position: absolute;
+    inset: 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+}
+
+/* Dark cinematic overlay */
+.invitation-hero .hero-image:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, .50),
+        rgba(0, 0, 0, .40) 45%,
+        rgba(0, 0, 0, .65)
+    );
+}
+
+/* Main invitation content */
+.invitation-hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 750px;
+
+    padding: 100px 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    animation: fadeUp 1.4s ease both;
+}
+
+/* Decorative horizontal lines */
+.invitation-line {
+    width: 180px;
+    height: 1px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(197, 170, 120, .75),
+        transparent
+    );
+
+    margin-bottom: 55px;
+}
+
+/* Guest name */
+.invitation-guest-name {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(65px, 12vw, 110px);
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1;
+
+    color: #e8d4a4;
+
+    margin: 0;
+
+    letter-spacing: -1px;
+
+    text-shadow: 0 3px 25px rgba(0, 0, 0, .25);
+}
+
+/* Invitation subtitle */
+.invitation-subtitle {
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(17px, 3.5vw, 36px);
+    font-weight: 300;
+
+    color: #d7c7a5;
+
+    margin: 25px 0 55px;
+
+    letter-spacing: .5px;
+}
+
+/* Bottom decorative line */
+.invitation-line-bottom {
+    margin: 0;
+}
+
+/* Bottom caption */
+.invitation-hero .hero-bottom-mark {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+
+    font-size: 8px;
+    letter-spacing: 3px;
+
+    color: #b8ad9a;
+
+    text-align: center;
+}
+
+/* Mobile adjustments */
+@media (max-width: 700px) {
+
+    .invitation-hero-content {
+        padding: 100px 20px;
+    }
+
+    .invitation-line {
+        width: 120px;
+        margin-bottom: 40px;
+    }
+
+    .invitation-guest-name {
+        font-size: clamp(58px, 16vw, 85px);
+    }
+
+    .invitation-subtitle {
+        font-size: 20px;
+        margin: 20px 0 40px;
+    }
+
+    .invitation-line-bottom {
+        margin: 0;
+    }
+}
