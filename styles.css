@@ -299,3 +299,67 @@
         margin: 0;
     }
 }
+/* Guest Invitation Section */
+.guest-invitation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* Golden line immediately above guest name */
+.guest-name-line {
+    width: 100px;
+    height: 1px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(197, 170, 120, .85),
+        transparent
+    );
+
+    margin-bottom: 18px;
+}
+
+/* Guest Name */
+.invitation-guest-name {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.2;
+    color: #e8d4a4;
+    margin: 0;
+    text-shadow: 0 3px 20px rgba(0, 0, 0, .25);
+}
+
+/* Invitation Message */
+.invitation-subtitle {
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(11px, 1.3vw, 14px);
+    font-weight: 300;
+    color: #d7c7a5;
+    letter-spacing: 1px;
+    margin: 12px 0 30px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    .guest-name-line {
+        width: 80px;
+        margin-bottom: 14px;
+    }
+
+    .invitation-guest-name {
+        font-size: 23px;
+    }
+
+    .invitation-subtitle {
+        font-size: 11px;
+        margin: 10px 0 25px;
+    }
+
+}
