@@ -428,3 +428,26 @@
         margin-top: 10px;
     }
 }
+/* Remove all decorative lines from the bride and groom names */
+.hero-couple-names {
+    border: none !important;
+    background-image: none !important;
+}
+
+.hero-couple-names::before,
+.hero-couple-names::after,
+.hero-couple-names h1::before,
+.hero-couple-names h1::after {
+    content: none !important;
+    display: none !important;
+    border: none !important;
+}
+
+/* Keep decorative lines exclusively around the guest invitation */
+.guest-name-line {
+    display: block;
+}
+
+.guest-name-line-bottom {
+    display: block;
+}
