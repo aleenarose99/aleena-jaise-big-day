@@ -36,6 +36,10 @@
 const params = new URLSearchParams(window.location.search);
 const inviteeName = params.get("to");
 
+  set("heroBrideName", c.bride);
+
+  set("heroGroomName", c.groom);
+
 const guestDisplayName = $("guestDisplayName");
 
 if (guestDisplayName) {
