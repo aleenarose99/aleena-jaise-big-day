@@ -29,25 +29,17 @@
 
   // Personalized invitation
  // Personalized invitation
+// =================================
+// PERSONALIZED HERO INVITATION
+// =================================
+
 const params = new URLSearchParams(window.location.search);
 const inviteeName = params.get("to");
 
-const personalInvite = $("personalInvite");
+const guestDisplayName = $("guestDisplayName");
 
-if (personalInvite) {
-    if (inviteeName) {
-        const nameSpan = document.createElement("span");
-        nameSpan.className = "invitee-name";
-        nameSpan.textContent = inviteeName;
-
-        personalInvite.replaceChildren(
-            nameSpan,
-            document.createElement("br"),
-            document.createTextNode("You Are Specially Invited")
-        );
-    } else {
-        personalInvite.textContent = "You Are Specially Invited";
-    }
+if (guestDisplayName) {
+    guestDisplayName.textContent = inviteeName || "Aleena & Jaise";
 }
 
 set(
