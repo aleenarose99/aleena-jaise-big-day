@@ -171,3 +171,30 @@
         margin: 0;
     }
 }
+/* Couple names on invitation hero */
+.hero-couple-names {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(22px, 4vw, 36px);
+    font-weight: 400;
+    color: #eee8dc;
+    letter-spacing: 1px;
+    margin: 0 0 35px;
+}
+
+.hero-couple-names i {
+    font-style: italic;
+    color: #c5aa78;
+    padding: 0 12px;
+}
+
+/* Mobile adjustment */
+@media (max-width: 700px) {
+    .hero-couple-names {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .hero-couple-names i {
+        padding: 0 7px;
+    }
+}
