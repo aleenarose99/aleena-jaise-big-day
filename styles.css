@@ -99,16 +99,16 @@
 /* Guest name */
 .invitation-guest-name {
     font-family: "Cormorant Garamond", serif;
-    font-size: clamp(65px, 12vw, 110px);
+
+    font-size: clamp(42px, 7vw, 75px);
     font-weight: 500;
     font-style: italic;
+
     line-height: 1;
 
     color: #e8d4a4;
 
     margin: 0;
-
-    letter-spacing: -1px;
 
     text-shadow: 0 3px 25px rgba(0, 0, 0, .25);
 }
@@ -172,29 +172,73 @@
     }
 }
 /* Couple names on invitation hero */
+/* ========================================
+   HIGHLIGHTED COUPLE NAMES - HERO
+======================================== */
+
 .hero-couple-names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    margin: 0 0 45px;
+
+    text-align: center;
+}
+
+/* Bride and Groom Names */
+
+.hero-couple-names h1 {
     font-family: "Cormorant Garamond", serif;
-    font-size: clamp(22px, 4vw, 36px);
-    font-weight: 400;
-    color: #eee8dc;
+
+    font-size: clamp(65px, 12vw, 125px);
+    font-weight: 500;
+    font-style: normal;
+
+    line-height: .95;
+
     letter-spacing: 1px;
-    margin: 0 0 35px;
+
+    color: #eee8dc;
+
+    margin: 0;
+
+    text-shadow: 0 4px 25px rgba(0, 0, 0, .3);
 }
 
-.hero-couple-names i {
+/* Ampersand */
+
+.hero-ampersand {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(30px, 4vw, 48px);
+    font-weight: 400;
     font-style: italic;
+
     color: #c5aa78;
-    padding: 0 12px;
+
+    margin: 22px 0;
 }
 
-/* Mobile adjustment */
+/* Mobile Responsive */
+
 @media (max-width: 700px) {
+
     .hero-couple-names {
-        font-size: 25px;
-        margin-bottom: 30px;
+        margin-bottom: 35px;
     }
 
-    .hero-couple-names i {
-        padding: 0 7px;
+    .hero-couple-names h1 {
+        font-size: clamp(55px, 15vw, 90px);
+        line-height: 1;
     }
+
+    .hero-ampersand {
+        font-size: 32px;
+        margin: 15px 0;
+    }
+
 }
