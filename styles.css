@@ -12,8 +12,8 @@
 .invitee-name {
     display: block;
     font-family: "Cormorant Garamond", serif;
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
     color: #c5aa78;
     line-height: 1.2;
     margin-bottom: 8px;
@@ -100,7 +100,7 @@
 .invitation-guest-name {
     font-family: "Cormorant Garamond", serif;
 
-    font-size: clamp(42px, 7vw, 75px);
+    font-size: clamp(12px, 7vw, 55px);
     font-weight: 500;
     font-style: italic;
 
