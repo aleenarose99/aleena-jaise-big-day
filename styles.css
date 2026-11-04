@@ -97,14 +97,15 @@
 }
 
 /* Guest name */
+/* Guest name */
 .invitation-guest-name {
     font-family: "Cormorant Garamond", serif;
 
-    font-size: clamp(12px, 7vw, 55px);
+    font-size: clamp(24px, 3.5vw, 38px);
     font-weight: 500;
     font-style: italic;
 
-    line-height: 1;
+    line-height: 1.2;
 
     color: #e8d4a4;
 
@@ -116,19 +117,46 @@
 /* Invitation subtitle */
 .invitation-subtitle {
     font-family: "DM Sans", sans-serif;
-    font-size: clamp(17px, 3.5vw, 36px);
+    font-size: clamp(12px, 1.5vw, 16px);
     font-weight: 300;
 
     color: #d7c7a5;
 
-    margin: 25px 0 55px;
+    margin: 18px 0 40px;
 
-    letter-spacing: .5px;
+    letter-spacing: 1px;
 }
 
 /* Bottom decorative line */
 .invitation-line-bottom {
     margin: 0;
+}
+/* Decorative line above guest name */
+
+.invitation-guest-name::before {
+
+    content: "";
+
+    display: block;
+
+    width: 120px;
+
+    height: 1px;
+
+    background: linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(197, 170, 120, .75),
+
+        transparent
+
+    );
+
+    margin: 0 auto 22px;
+
 }
 
 /* Bottom caption */
@@ -241,4 +269,33 @@
         margin: 15px 0;
     }
 
+}
+@media (max-width: 700px) {
+
+    .invitation-hero-content {
+        padding: 100px 20px;
+    }
+
+    .invitation-line {
+        width: 120px;
+        margin-bottom: 35px;
+    }
+
+    .invitation-guest-name {
+        font-size: 27px;
+    }
+
+    .invitation-guest-name::before {
+        width: 100px;
+        margin-bottom: 18px;
+    }
+
+    .invitation-subtitle {
+        font-size: 13px;
+        margin: 15px 0 32px;
+    }
+
+    .invitation-line-bottom {
+        margin: 0;
+    }
 }
